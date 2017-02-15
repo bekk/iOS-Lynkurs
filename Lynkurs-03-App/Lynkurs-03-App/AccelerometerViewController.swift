@@ -1,5 +1,5 @@
 //
-//  ConverterViewController.swift
+//  AccelerometerViewController.swift
 //  Lynkurs-03-App
 //
 //  Created by Fredrik Lillejordet on 15.02.2017.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class ConverterViewController: UIViewController {
+class AccelerometerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Converter"
+        title = "Accelerometer"
     }
-    
 }
