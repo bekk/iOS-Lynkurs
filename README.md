@@ -1,7 +1,21 @@
 # iOS-Lynkurs
 
-## Lynkurs-01-Swift
 
+Snarveier i Xcode:
+
+```CMD + R``` bygger og kjører prosjekt.
+
+```CMD + B``` bygger prosjekt.
+
+```CMD + U``` kjører kun tester.
+
+``` Ctrl + CMD + Enter ``` åpner Assistant Editor.
+
+## Lynkurs-01-Swift
+Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
+
+####Oppgaver: 
+Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` fungerer. 
 
 ## Lynkurs-02-iOS
 Lær deg basic iOS og Xcode ved å lag følgende: 
