@@ -13,10 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var input: UITextField!
 
-    @IBAction func button(_ sender: Any) {
-        if ((input.text) != nil) {
-            oppdaterLabel(inputText: input.text!)
-        }
+    @IBAction func inputChanged(_ sender: UITextField) {
+        oppdaterLabel(inputText: sender.text!)
     }
     
     override func viewDidLoad() {
