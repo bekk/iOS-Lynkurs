@@ -9,7 +9,7 @@ Snarveier i Xcode:
 
 ```CMD + U``` kjører kun tester.
 
-``` Ctrl + CMD + Enter ``` åpner Assistant Editor.
+```CMD + Option + Enter ``` åpner Assistant Editor.
 
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
