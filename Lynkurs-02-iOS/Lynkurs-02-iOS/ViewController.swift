@@ -10,6 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var input: UITextField!
+
+    @IBAction func button(_ sender: Any) {
+        if ((input.text) != nil) {
+            oppdaterLabel(inputText: input.text!)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +28,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func oppdaterLabel(inputText: String) {
+        label.text = inputText;
+    }
 }
-
