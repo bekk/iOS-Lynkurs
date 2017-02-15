@@ -54,14 +54,30 @@
 		35DE58081E546DD7002D899E /* Lynkurs-03-App */ = {
 			isa = PBXGroup;
 			children = (
+				35DE582F1E5470A6002D899E /* Controllers */,
+				35DE582E1E54709E002D899E /* Views */,
 				35DE58091E546DD7002D899E /* AppDelegate.swift */,
-				35DE580B1E546DD7002D899E /* ViewController.swift */,
-				35DE580D1E546DD7002D899E /* Main.storyboard */,
 				35DE58101E546DD7002D899E /* Assets.xcassets */,
-				35DE58121E546DD7002D899E /* LaunchScreen.storyboard */,
 				35DE58151E546DD7002D899E /* Info.plist */,
 			);
 			path = "Lynkurs-03-App";
+			sourceTree = "<group>";
+		};
+		35DE582E1E54709E002D899E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35DE580D1E546DD7002D899E /* Main.storyboard */,
+				35DE58121E546DD7002D899E /* LaunchScreen.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		35DE582F1E5470A6002D899E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35DE580B1E546DD7002D899E /* ViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
