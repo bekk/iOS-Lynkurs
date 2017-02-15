@@ -29,18 +29,36 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MultiApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ake-4N-koZ">
-                                <rect key="frame" x="133" y="105" width="109" height="31.5"/>
+                                <rect key="frame" x="133" y="105" width="109" height="32"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-G0-B5o" userLabel="Motion">
+                                <rect key="frame" x="163" y="227" width="48" height="30"/>
+                                <state key="normal" title="Motion"/>
+                                <connections>
+                                    <segue destination="p7Y-kp-mDw" kind="show" id="hn4-zv-igw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na9-ie-57T">
+                                <rect key="frame" x="159" y="279" width="58" height="30"/>
+                                <state key="normal" title="Network"/>
+                                <connections>
+                                    <segue destination="hbM-4i-R3J" kind="show" id="eU0-Nb-zO9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ake-4N-koZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4em-19-vnz"/>
                             <constraint firstItem="3o3-Ko-dcg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LyR-0g-AcA"/>
+                            <constraint firstItem="bS0-G0-B5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YpO-Nd-yO1"/>
                             <constraint firstItem="3o3-Ko-dcg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="ZP4-Om-x7f"/>
+                            <constraint firstItem="bS0-G0-B5o" firstAttribute="top" secondItem="3o3-Ko-dcg" secondAttribute="bottom" constant="23" id="Zta-YB-2QY"/>
+                            <constraint firstItem="na9-ie-57T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5O-DX-4TW"/>
                             <constraint firstItem="Ake-4N-koZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="ikY-zY-O0R"/>
+                            <constraint firstItem="na9-ie-57T" firstAttribute="top" secondItem="bS0-G0-B5o" secondAttribute="bottom" constant="22" id="yYO-T9-1yd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zw0-FP-yT7"/>
@@ -48,6 +66,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-148" y="-227"/>
+        </scene>
+        <!--Motion View Controller-->
+        <scene sceneID="sVR-qc-zTK">
+            <objects>
+                <viewController id="p7Y-kp-mDw" customClass="MotionViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tvu-Tl-8zS"/>
+                        <viewControllerLayoutGuide type="bottom" id="r3V-af-mBV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CE5-br-xAH" customClass="Accel">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.72792868616756556" blue="0.74260126651230873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJi-wt-ZX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-1003"/>
+        </scene>
+        <!--Network View Controller-->
+        <scene sceneID="Dn9-Gf-wil">
+            <objects>
+                <viewController id="hbM-4i-R3J" customClass="NetworkViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OOj-oz-NGp"/>
+                        <viewControllerLayoutGuide type="bottom" id="vl3-Mr-SRT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Anh-UE-2l5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.87293270090410591" green="1" blue="0.9134993889354398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wOp-0p-hQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1358" y="-331"/>
         </scene>
         <!--Converter View Controller-->
         <scene sceneID="1HO-NN-vey">
@@ -60,12 +114,12 @@
                     <view key="view" contentMode="scaleToFill" id="Qts-6q-XeM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.83197177685955492" green="0.93160898709951656" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82587445988407726" green="0.88255605754192246" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mft-GS-qZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="-735"/>
+            <point key="canvasLocation" x="681" y="-1383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="De2-uw-ajh">
