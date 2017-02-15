@@ -1,0 +1,369 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35DE58281E546FC0002D899E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE58271E546FC0002D899E /* main.swift */; };
+		35DE58371E54716A002D899E /* Lynkurs_01_Swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE58361E54716A002D899E /* Lynkurs_01_Swift_Tests.swift */; };
+		35DE583D1E5471A6002D899E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE583C1E5471A6002D899E /* Person.swift */; };
+		35DE583E1E5471B4002D899E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE583C1E5471A6002D899E /* Person.swift */; };
+		35DE58401E5471CB002D899E /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE583F1E5471CB002D899E /* PersonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35DE58221E546FC0002D899E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		35DE58241E546FC0002D899E /* Lynkurs-01-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lynkurs-01-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DE58271E546FC0002D899E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		35DE58341E54716A002D899E /* Lynkurs-01-Swift-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lynkurs-01-Swift-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DE58361E54716A002D899E /* Lynkurs_01_Swift_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lynkurs_01_Swift_Tests.swift; sourceTree = "<group>"; };
+		35DE58381E54716A002D899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35DE583C1E5471A6002D899E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		35DE583F1E5471CB002D899E /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35DE58211E546FC0002D899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DE58311E54716A002D899E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35DE581B1E546FC0002D899E = {
+			isa = PBXGroup;
+			children = (
+				35DE58261E546FC0002D899E /* Lynkurs-01-Swift */,
+				35DE58351E54716A002D899E /* Lynkurs-01-Swift-Tests */,
+				35DE58251E546FC0002D899E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35DE58251E546FC0002D899E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35DE58241E546FC0002D899E /* Lynkurs-01-Swift */,
+				35DE58341E54716A002D899E /* Lynkurs-01-Swift-Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35DE58261E546FC0002D899E /* Lynkurs-01-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				35DE58271E546FC0002D899E /* main.swift */,
+				35DE583C1E5471A6002D899E /* Person.swift */,
+			);
+			path = "Lynkurs-01-Swift";
+			sourceTree = "<group>";
+		};
+		35DE58351E54716A002D899E /* Lynkurs-01-Swift-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				35DE58361E54716A002D899E /* Lynkurs_01_Swift_Tests.swift */,
+				35DE58381E54716A002D899E /* Info.plist */,
+				35DE583F1E5471CB002D899E /* PersonTests.swift */,
+			);
+			path = "Lynkurs-01-Swift-Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35DE58231E546FC0002D899E /* Lynkurs-01-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DE582B1E546FC0002D899E /* Build configuration list for PBXNativeTarget "Lynkurs-01-Swift" */;
+			buildPhases = (
+				35DE58201E546FC0002D899E /* Sources */,
+				35DE58211E546FC0002D899E /* Frameworks */,
+				35DE58221E546FC0002D899E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lynkurs-01-Swift";
+			productName = "Lynkurs-01-Swift";
+			productReference = 35DE58241E546FC0002D899E /* Lynkurs-01-Swift */;
+			productType = "com.apple.product-type.tool";
+		};
+		35DE58331E54716A002D899E /* Lynkurs-01-Swift-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DE58391E54716A002D899E /* Build configuration list for PBXNativeTarget "Lynkurs-01-Swift-Tests" */;
+			buildPhases = (
+				35DE58301E54716A002D899E /* Sources */,
+				35DE58311E54716A002D899E /* Frameworks */,
+				35DE58321E54716A002D899E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lynkurs-01-Swift-Tests";
+			productName = "Lynkurs-01-Swift-Tests";
+			productReference = 35DE58341E54716A002D899E /* Lynkurs-01-Swift-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35DE581C1E546FC0002D899E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Bekk Consulting AS";
+				TargetAttributes = {
+					35DE58231E546FC0002D899E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WERKB43HPJ;
+						ProvisioningStyle = Automatic;
+					};
+					35DE58331E54716A002D899E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WERKB43HPJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 35DE581F1E546FC0002D899E /* Build configuration list for PBXProject "Lynkurs-01-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 35DE581B1E546FC0002D899E;
+			productRefGroup = 35DE58251E546FC0002D899E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35DE58231E546FC0002D899E /* Lynkurs-01-Swift */,
+				35DE58331E54716A002D899E /* Lynkurs-01-Swift-Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35DE58321E54716A002D899E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35DE58201E546FC0002D899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DE583D1E5471A6002D899E /* Person.swift in Sources */,
+				35DE58281E546FC0002D899E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DE58301E54716A002D899E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DE583E1E5471B4002D899E /* Person.swift in Sources */,
+				35DE58401E5471CB002D899E /* PersonTests.swift in Sources */,
+				35DE58371E54716A002D899E /* Lynkurs_01_Swift_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		35DE58291E546FC0002D899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35DE582A1E546FC0002D899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		35DE582C1E546FC0002D899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WERKB43HPJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		35DE582D1E546FC0002D899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = WERKB43HPJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		35DE583A1E54716A002D899E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WERKB43HPJ;
+				INFOPLIST_FILE = "Lynkurs-01-Swift-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.bekk.Lynkurs-01-Swift-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		35DE583B1E54716A002D899E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WERKB43HPJ;
+				INFOPLIST_FILE = "Lynkurs-01-Swift-Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.bekk.Lynkurs-01-Swift-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35DE581F1E546FC0002D899E /* Build configuration list for PBXProject "Lynkurs-01-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DE58291E546FC0002D899E /* Debug */,
+				35DE582A1E546FC0002D899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DE582B1E546FC0002D899E /* Build configuration list for PBXNativeTarget "Lynkurs-01-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DE582C1E546FC0002D899E /* Debug */,
+				35DE582D1E546FC0002D899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		35DE58391E54716A002D899E /* Build configuration list for PBXNativeTarget "Lynkurs-01-Swift-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DE583A1E54716A002D899E /* Debug */,
+				35DE583B1E54716A002D899E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35DE581C1E546FC0002D899E /* Project object */;
+}
