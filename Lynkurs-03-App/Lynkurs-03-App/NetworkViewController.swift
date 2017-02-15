@@ -1,5 +1,5 @@
 //
-//  AccelerometerViewController.swift
+//  NetworkViewController.swift
 //  Lynkurs-03-App
 //
 //  Created by Fredrik Lillejordet on 15.02.2017.
@@ -8,9 +8,10 @@
 
 import UIKit
 
-class AccelerometerViewController: UIViewController {
+class NetworkViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Accelerometer"
+        title = "Network"
     }
 }

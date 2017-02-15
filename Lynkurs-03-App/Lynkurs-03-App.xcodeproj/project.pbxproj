@@ -13,7 +13,8 @@
 		35DE58111E546DD7002D899E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35DE58101E546DD7002D899E /* Assets.xcassets */; };
 		35DE58141E546DD7002D899E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE58121E546DD7002D899E /* LaunchScreen.storyboard */; };
 		35E3C9DE1E547D9800E94B63 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9DD1E547D9800E94B63 /* ConverterViewController.swift */; };
-		35E3C9E01E5481F200E94B63 /* AccelerometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9DF1E5481F200E94B63 /* AccelerometerViewController.swift */; };
+		35E3C9E01E5481F200E94B63 /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9DF1E5481F200E94B63 /* MotionViewController.swift */; };
+		35E3C9E21E5486BD00E94B63 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		35DE58131E546DD7002D899E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35DE58151E546DD7002D899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35E3C9DD1E547D9800E94B63 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
-		35E3C9DF1E5481F200E94B63 /* AccelerometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccelerometerViewController.swift; sourceTree = "<group>"; };
+		35E3C9DF1E5481F200E94B63 /* MotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
+		35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,8 @@
 			children = (
 				35DE580B1E546DD7002D899E /* ViewController.swift */,
 				35E3C9DD1E547D9800E94B63 /* ConverterViewController.swift */,
-				35E3C9DF1E5481F200E94B63 /* AccelerometerViewController.swift */,
+				35E3C9DF1E5481F200E94B63 /* MotionViewController.swift */,
+				35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -161,7 +164,8 @@
 			files = (
 				35DE580C1E546DD7002D899E /* ViewController.swift in Sources */,
 				35DE580A1E546DD7002D899E /* AppDelegate.swift in Sources */,
-				35E3C9E01E5481F200E94B63 /* AccelerometerViewController.swift in Sources */,
+				35E3C9E01E5481F200E94B63 /* MotionViewController.swift in Sources */,
+				35E3C9E21E5486BD00E94B63 /* NetworkViewController.swift in Sources */,
 				35E3C9DE1E547D9800E94B63 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

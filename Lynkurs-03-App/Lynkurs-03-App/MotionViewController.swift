@@ -1,5 +1,5 @@
 //
-//  ConverterViewController.swift
+//  MotionViewController.swift
 //  Lynkurs-03-App
 //
 //  Created by Fredrik Lillejordet on 15.02.2017.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ConverterViewController: UIViewController {
+class MotionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Converter"
+        title = "Motion"
     }
-    
 }
