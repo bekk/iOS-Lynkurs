@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,12 +115,56 @@
                     <view key="view" contentMode="scaleToFill" id="Qts-6q-XeM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMP-Hz-56s">
+                                <rect key="frame" x="122" y="156" width="130" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celsius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uod-Da-qXs">
+                                <rect key="frame" x="159" y="214" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czK-hK-ptk">
+                                <rect key="frame" x="147" y="127" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qpo-aC-11f">
+                                <rect key="frame" x="122" y="243" width="130" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.82587445988407726" green="0.88255605754192246" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TMP-Hz-56s" firstAttribute="top" secondItem="czK-hK-ptk" secondAttribute="bottom" constant="8" id="3o9-jt-0tB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qpo-aC-11f" secondAttribute="trailing" constant="107" id="CY5-Br-3jX"/>
+                            <constraint firstItem="czK-hK-ptk" firstAttribute="centerX" secondItem="Qts-6q-XeM" secondAttribute="centerX" id="Ka1-G7-S1X"/>
+                            <constraint firstItem="Qpo-aC-11f" firstAttribute="top" secondItem="Uod-Da-qXs" secondAttribute="bottom" constant="8" id="Q7s-ih-9qu"/>
+                            <constraint firstItem="TMP-Hz-56s" firstAttribute="centerX" secondItem="Qts-6q-XeM" secondAttribute="centerX" id="YFz-Wp-1sc"/>
+                            <constraint firstItem="Qpo-aC-11f" firstAttribute="centerX" secondItem="Qts-6q-XeM" secondAttribute="centerX" constant="-1" id="YPp-df-z15"/>
+                            <constraint firstItem="Qpo-aC-11f" firstAttribute="top" secondItem="TMP-Hz-56s" secondAttribute="bottom" constant="57" id="YcG-wc-TM1"/>
+                            <constraint firstItem="Qpo-aC-11f" firstAttribute="leading" secondItem="Qts-6q-XeM" secondAttribute="leadingMargin" constant="106" id="b2o-QH-XEA"/>
+                            <constraint firstItem="Uod-Da-qXs" firstAttribute="centerX" secondItem="Qts-6q-XeM" secondAttribute="centerX" id="cQU-mF-c58"/>
+                            <constraint firstItem="TMP-Hz-56s" firstAttribute="leading" secondItem="Qts-6q-XeM" secondAttribute="leadingMargin" constant="106" id="e2J-n8-xvS"/>
+                            <constraint firstItem="TMP-Hz-56s" firstAttribute="top" secondItem="9HE-qd-dOO" secondAttribute="bottom" constant="92" id="eeR-dd-DnN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TMP-Hz-56s" secondAttribute="trailing" constant="107" id="sRx-kR-lmv"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="celsius" destination="Qpo-aC-11f" id="MXp-PK-jEL"/>
+                        <outlet property="fahrenheit" destination="TMP-Hz-56s" id="jqu-Sw-XwF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mft-GS-qZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="681" y="-1383"/>
+            <point key="canvasLocation" x="680.79999999999995" y="-1383.0584707646178"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="De2-uw-ajh">
