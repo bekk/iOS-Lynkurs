@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35B74DF61E573C6300C75FA6 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B74DF51E573C6300C75FA6 /* MapsViewController.swift */; };
 		35DE580A1E546DD7002D899E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE58091E546DD7002D899E /* AppDelegate.swift */; };
 		35DE580C1E546DD7002D899E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE580B1E546DD7002D899E /* ViewController.swift */; };
 		35DE580F1E546DD7002D899E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DE580D1E546DD7002D899E /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35B74DF51E573C6300C75FA6 /* MapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
 		35DE58061E546DD7002D899E /* Lynkurs-03-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lynkurs-03-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DE58091E546DD7002D899E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35DE580B1E546DD7002D899E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				35E3C9DD1E547D9800E94B63 /* ConverterViewController.swift */,
 				35E3C9DF1E5481F200E94B63 /* MotionViewController.swift */,
 				35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */,
+				35B74DF51E573C6300C75FA6 /* MapsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				35DE580C1E546DD7002D899E /* ViewController.swift in Sources */,
 				35DE580A1E546DD7002D899E /* AppDelegate.swift in Sources */,
 				35E3C9E01E5481F200E94B63 /* MotionViewController.swift in Sources */,
+				35B74DF61E573C6300C75FA6 /* MapsViewController.swift in Sources */,
 				35E3C9E21E5486BD00E94B63 /* NetworkViewController.swift in Sources */,
 				35E3C9DE1E547D9800E94B63 /* ConverterViewController.swift in Sources */,
 			);

@@ -36,73 +36,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bS0-G0-B5o" userLabel="Motion">
-                                <rect key="frame" x="163" y="227" width="48" height="30"/>
+                                <rect key="frame" x="163" y="318" width="48" height="30"/>
                                 <state key="normal" title="Motion"/>
                                 <connections>
-                                    <segue destination="p7Y-kp-mDw" kind="show" id="hn4-zv-igw"/>
+                                    <segue destination="k1C-Ti-auQ" kind="show" id="fBZ-Yi-3mg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="na9-ie-57T">
-                                <rect key="frame" x="159" y="279" width="58" height="30"/>
+                                <rect key="frame" x="158" y="268" width="58" height="30"/>
                                 <state key="normal" title="Network"/>
                                 <connections>
-                                    <segue destination="hbM-4i-R3J" kind="show" id="eU0-Nb-zO9"/>
+                                    <segue destination="kxH-6R-CYy" kind="show" id="eiH-PO-E6m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv4-9N-x6O">
+                                <rect key="frame" x="168" y="222" width="38" height="30"/>
+                                <state key="normal" title="Maps"/>
+                                <connections>
+                                    <segue destination="eOq-62-BJg" kind="show" id="2Sh-ds-0JZ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ake-4N-koZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4em-19-vnz"/>
+                            <constraint firstItem="bS0-G0-B5o" firstAttribute="top" secondItem="na9-ie-57T" secondAttribute="bottom" constant="20" id="Cpu-l0-wj4"/>
+                            <constraint firstItem="kv4-9N-x6O" firstAttribute="top" secondItem="3o3-Ko-dcg" secondAttribute="bottom" constant="18" id="I41-2K-op0"/>
                             <constraint firstItem="3o3-Ko-dcg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LyR-0g-AcA"/>
+                            <constraint firstItem="na9-ie-57T" firstAttribute="top" secondItem="kv4-9N-x6O" secondAttribute="bottom" constant="16" id="Sok-yW-r4R"/>
+                            <constraint firstItem="kv4-9N-x6O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X84-n4-bib"/>
                             <constraint firstItem="bS0-G0-B5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YpO-Nd-yO1"/>
                             <constraint firstItem="3o3-Ko-dcg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="ZP4-Om-x7f"/>
-                            <constraint firstItem="bS0-G0-B5o" firstAttribute="top" secondItem="3o3-Ko-dcg" secondAttribute="bottom" constant="23" id="Zta-YB-2QY"/>
                             <constraint firstItem="na9-ie-57T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5O-DX-4TW"/>
                             <constraint firstItem="Ake-4N-koZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="ikY-zY-O0R"/>
-                            <constraint firstItem="na9-ie-57T" firstAttribute="top" secondItem="bS0-G0-B5o" secondAttribute="bottom" constant="22" id="yYO-T9-1yd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zw0-FP-yT7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="-227"/>
-        </scene>
-        <!--Motion View Controller-->
-        <scene sceneID="sVR-qc-zTK">
-            <objects>
-                <viewController id="p7Y-kp-mDw" customClass="MotionViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Tvu-Tl-8zS"/>
-                        <viewControllerLayoutGuide type="bottom" id="r3V-af-mBV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CE5-br-xAH" customClass="Accel">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.72792868616756556" blue="0.74260126651230873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gJi-wt-ZX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1358" y="-1003"/>
-        </scene>
-        <!--Network View Controller-->
-        <scene sceneID="Dn9-Gf-wil">
-            <objects>
-                <viewController id="hbM-4i-R3J" customClass="NetworkViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OOj-oz-NGp"/>
-                        <viewControllerLayoutGuide type="bottom" id="vl3-Mr-SRT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Anh-UE-2l5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.87293270090410591" green="1" blue="0.9134993889354398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wOp-0p-hQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1358" y="-331"/>
+            <point key="canvasLocation" x="-148" y="-227.13643178410797"/>
         </scene>
         <!--Converter View Controller-->
         <scene sceneID="1HO-NN-vey">
@@ -163,6 +136,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mft-GS-qZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="680.79999999999995" y="-1383.0584707646178"/>
+        </scene>
+        <!--Maps View Controller-->
+        <scene sceneID="0nL-LG-H10">
+            <objects>
+                <viewController id="eOq-62-BJg" customClass="MapsViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E3l-4e-EgZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y6I-zm-Qrj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oXt-y7-TvB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ylh-QF-nnb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="BoA-ts-csy"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.91751531462516878" blue="0.84772297554085063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ylh-QF-nnb" firstAttribute="leading" secondItem="oXt-y7-TvB" secondAttribute="leading" id="CI1-pC-T7R"/>
+                            <constraint firstItem="ylh-QF-nnb" firstAttribute="centerX" secondItem="oXt-y7-TvB" secondAttribute="centerX" id="JGD-Cp-hL6"/>
+                            <constraint firstItem="ylh-QF-nnb" firstAttribute="top" secondItem="E3l-4e-EgZ" secondAttribute="bottom" id="nP7-NA-xnD"/>
+                            <constraint firstItem="ylh-QF-nnb" firstAttribute="bottom" secondItem="Y6I-zm-Qrj" secondAttribute="top" id="swc-n0-mVP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ylh-QF-nnb" id="PKN-AF-TXJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bv-HK-o0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1442" y="-994"/>
+        </scene>
+        <!--Network View Controller-->
+        <scene sceneID="CCD-VG-Idj">
+            <objects>
+                <viewController id="kxH-6R-CYy" customClass="NetworkViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XRI-4g-YY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="lxY-j5-Bhv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QOV-RS-qOC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99911054345507355" green="0.94016873510539356" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kiq-rL-H9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="-309"/>
+        </scene>
+        <!--Motion View Controller-->
+        <scene sceneID="9gg-c7-A9Z">
+            <objects>
+                <viewController id="k1C-Ti-auQ" customClass="MotionViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KzM-dH-LPi"/>
+                        <viewControllerLayoutGuide type="bottom" id="TFl-Zy-bWf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Ie-cf-DVn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99603358213472148" green="1" blue="0.8438542615252056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYQ-xU-WBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="349"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="De2-uw-ajh">
