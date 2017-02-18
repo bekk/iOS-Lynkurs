@@ -183,12 +183,47 @@
                     <view key="view" contentMode="scaleToFill" id="QOV-RS-qOC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NOK-HN-sOa">
+                                <rect key="frame" x="165" y="179" width="45" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzF-EK-5Bl">
+                                <rect key="frame" x="172" y="217" width="30" height="30"/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="getButton:" destination="kxH-6R-CYy" eventType="touchUpInside" id="knA-wm-aay"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9Q-Cz-QaI">
+                                <rect key="frame" x="87" y="142" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.99911054345507355" green="0.94016873510539356" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s9Q-Cz-QaI" firstAttribute="centerX" secondItem="QOV-RS-qOC" secondAttribute="centerX" id="6u3-yQ-Z5X"/>
+                            <constraint firstItem="NOK-HN-sOa" firstAttribute="top" secondItem="s9Q-Cz-QaI" secondAttribute="bottom" constant="16" id="B0p-Yz-2rP"/>
+                            <constraint firstItem="s9Q-Cz-QaI" firstAttribute="leading" secondItem="QOV-RS-qOC" secondAttribute="leadingMargin" constant="71" id="DVi-19-tA4"/>
+                            <constraint firstItem="NOK-HN-sOa" firstAttribute="centerX" secondItem="QOV-RS-qOC" secondAttribute="centerX" id="ZqN-1b-Yak"/>
+                            <constraint firstItem="NOK-HN-sOa" firstAttribute="leading" secondItem="QOV-RS-qOC" secondAttribute="leadingMargin" constant="149" id="ef6-ql-fjT"/>
+                            <constraint firstItem="vzF-EK-5Bl" firstAttribute="top" secondItem="NOK-HN-sOa" secondAttribute="bottom" constant="8" id="g7q-yb-oCt"/>
+                            <constraint firstItem="s9Q-Cz-QaI" firstAttribute="top" secondItem="XRI-4g-YY2" secondAttribute="bottom" constant="78" id="odM-ql-wSY"/>
+                            <constraint firstItem="vzF-EK-5Bl" firstAttribute="centerX" secondItem="QOV-RS-qOC" secondAttribute="centerX" id="wNK-OI-kTz"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="input" destination="NOK-HN-sOa" id="BGs-H7-mPZ"/>
+                        <outlet property="name" destination="s9Q-Cz-QaI" id="n63-PD-Z43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiq-rL-H9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441" y="-309"/>
+            <point key="canvasLocation" x="1440.8" y="-309.89505247376314"/>
         </scene>
         <!--Motion View Controller-->
         <scene sceneID="9gg-c7-A9Z">
