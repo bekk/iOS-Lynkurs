@@ -24,12 +24,12 @@ class ConverterViewController: UIViewController {
     func textFieldValueChanged(_ textField: UITextField) {
 
         if textField == fahrenheit {
-            if let value: Double = Double(fahrenheit.text!) {
+            if let value: Double = Double(textField.text!) {
                 let converted = round((value - 32) / 1.8)
                 celsius.text = "\(converted)"
             }
         } else {
-            if let value: Double = Double(celsius.text!) {
+            if let value: Double = Double(textField.text!) {
                 let converted = round(value * 1.8 + 32)
                 fahrenheit.text = "\(converted)"
             }

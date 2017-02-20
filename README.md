@@ -36,30 +36,47 @@ For at views skal ha en navigasjon tilbake til hovedview kan du velge å legge t
 
 Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in.. -> Navigation Controller```.
 
-#### 1: ConverterViewController
-Konverter numeriske verdier live ved å bruke to Text Fields og lyttere. 
+#### Oppgave 1: ConverterViewController
+Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vica versa.
 
-#### 2: MapViewController
+Tips:
+
+Enten kan verdien hentes ut fra ```textfield```ved å kalle ```textfield.text```
+
+For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ``handleValue``` kalles med tekstfeltet som argument når det skjer noe.
+```
+textfield.addTarget(self, action: #selector(handleValue(_:)), for: .editingChanged)
+```
+
+Deretter kan verdien fra det generiske input feltet håndteres 
+```
+func handleValue(_ textField: UITextField) {
+    if let value: Double = Double(textField.text!) {
+        //Bruk verdi
+    }
+}
+```
+
+Verdier kan settes på tilsvarende måte med ```textField.text = "\(value)"```.
+
+
+#### Oppgave 2: MapViewController
 Bruk Apple Maps til å vise et kart hvor... 
 
-#### 3. NetworkViewController
+#### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
 
-#### 4. ImageViewController
+#### Oppgave 4. ImageViewController
 Hent og vis bilder lagret på simulator eller enhet.
 
-#### 5. Lag 
-
-### Ekstraoppgaver:
-
-#### 5. CameraViewController
+#### Oppgave 5. CameraViewController
 Ta bilder med kamera og bruk dem i App.
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
-#### 6. MotionViewController
+#### Oppgave 6. MotionViewController
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
-#### 7. ListViewController
+#### Oppgave 7. ListViewController
 Lag en liste hvor man kan legge til og slette elementer.
 
 Tips:
