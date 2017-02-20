@@ -35,7 +35,7 @@ Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in..
 
 #### Oppgave 1: ConverterViewController
 Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vice versa.
-![alt text](https://github.com/bekk/iOS-Lynkurs/Assets/ConverterViewControllerExample.png "ConvertViewController")
+![alt text](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png "ConvertViewController")
 
 **Tips:**
 
