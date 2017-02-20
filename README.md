@@ -91,17 +91,17 @@ import MapKit
 
 Opprett en liste med alle markørene du ønsker ha i kartet ditt. f.eks:
 ```swift
-    let annotation = MKPointAnnotation()
-    annotation.title = "Bekk Consulting AS"
-    annotation.coordinate = CLLocationCoordinate2D(latitude: 59.9037048, longitude: 10.7369906)
-    
-    var markers: [MKPointAnnotation] = []
-    markers.append(annotation)
+let annotation = MKPointAnnotation()
+annotation.title = "Bekk Consulting AS"
+annotation.coordinate = CLLocationCoordinate2D(latitude: 59.9037048, longitude: 10.7369906)
+
+var markers: [MKPointAnnotation] = []
+markers.append(annotation)
 ```
 
 Disse kan du legge til på kartet ved å skrive: 
 ```swift
-    mapView.addAnnotations(markers)
+mapView.addAnnotations(markers)
 ```
 ![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png "MapsViewController")
 
