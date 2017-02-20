@@ -64,3 +64,8 @@ Lag en liste hvor man kan legge til og slette elementer.
 
 Tips:
 Sjekk ut ```File -> New Project.. -> Master-Detail Application``` 
+
+### Andre tips:
+
+#### Ikon
+For å gi appen din et ikon/logo må du opprette PNGs etter retningslinje til [Apple](human-interface-guidelines/graphics/app-icon) og deretter legge de inn over gjeldene AppIcon i Assets.xcassets inne i Xcode. For å tilpasse et eksisterende bilde til logo-filter kan man bruke gratisverktøy som [MakeAppIcon.com](https://makeappicon.com).
