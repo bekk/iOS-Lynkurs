@@ -81,8 +81,28 @@ textField.text = "\(value)"
 ```
 
 #### Oppgave 2: MapViewController
-Bruk Apple Maps til å vise et kart hvor... 
+Implementer en View Controller som bruker Apple Maps til å vise markører gitt navn, breddegrader og lengdegrader. Det anbefales å lage et ```MKMapView``` i Storyboard og deretter knytte det opp mot View Controller via en IBOutlet.
 
+For å kunne bruke MapView må du importere MapKit i tillegg til UIKit i klassen:
+```swift
+import UIKit
+import MapKit
+```
+
+Opprett en liste med alle markørene du ønsker ha i kartet ditt. f.eks:
+```swift
+    let annotation = MKPointAnnotation()
+    annotation.title = "Bekk Consulting AS"
+    annotation.coordinate = CLLocationCoordinate2D(latitude: 59.9037048, longitude: 10.7369906)
+    
+    var markers: [MKPointAnnotation] = []
+    markers.append(annotation)
+```
+
+Disse kan du legge til på kartet ved å skrive: 
+```swift
+    mapView.addAnnotations(markers)
+```
 ![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png "MapsViewController")
 
 #### Oppgave 3. NetworkViewController
