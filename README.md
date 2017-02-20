@@ -107,6 +107,7 @@ Disse kan du legge til på kartet ved å skrive:
 ```swift
 mapView.addAnnotations(markers)
 ```
+
 ![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png "MapsViewController")
 
 #### Oppgave 3. NetworkViewController
@@ -166,6 +167,11 @@ if let value = data["value"] as? String {
     // Bruk value
 }
 ```
+
+Dersom endepunktet er usikkert(HTTP) og ikke sikkert (HTTPS) er du nødt til å lage noen unntak i ```Info.plist``` for å kunne nå endepunktet.
+
+![HttpEndpointExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/HttpEndpointExample.png "HttpEndpointExample")
+
 
 #### Oppgave 4. MotionViewController
 Implementer en View Controller som bruker CoreMotion til å utforske sensordata fra både akselerometeret og magnetometeret.
