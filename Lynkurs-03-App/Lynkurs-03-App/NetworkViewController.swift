@@ -66,7 +66,7 @@ class NetworkViewController: UIViewController {
             return
         }
     }
-
+    
     func updateView(person: [String: AnyObject]) {
 
         DispatchQueue.main.async {

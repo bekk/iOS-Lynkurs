@@ -65,7 +65,7 @@ Det er ofte en fordel å starte med å sette opp Text Fields og Text Labels i St
 
 Verdi hentes ut fra ```textfield```ved å kalle ```textfield.text```
 
-For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ``handleValue``` kalles med tekstfeltet som argument når det skjer noe.
+For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ```handleValue``` kalles med tekstfeltet som argument når det skjer noe.
 ```swift
 textfield.addTarget(self, action: #selector(handleValue(_:)), for: .editingChanged)
 ```
@@ -111,6 +111,61 @@ mapView.addAnnotations(markers)
 
 #### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
+
+Nettverkskall kan gjøres med innebygde URLSession:
+
+```swift
+func get(urlString: String) {
+    
+    let request = URLRequest(url: URL(string: urlString)!)
+    let session = URLSession.shared
+
+    let task = session.dataTask(with: request, completionHandler: { (data, response, error) in
+        guard error == nil else { //Abryter det oppstod feil
+            print("\(error)")
+            return
+        }
+
+        guard let responseData = data else { //Abryter om data ikke eksisterer
+            print("Error: did not receive data")
+            return
+        }
+
+        //Her kan vi bruke responsedata 
+    })
+    task.resume()
+}
+
+```
+
+For å kunne behandle dataobjektet - responseData kan vi enten brukte det direkte, eller parse det om til andre formater som kan være greier å jobbe med.
+Eksempelet viser hvordan vi kan gjøre om dataen til JSON:
+
+```swift
+
+    func parse(responseData: Data) {
+        do {
+            guard let data = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: AnyObject] else {
+                print("Error: Serialization failed")
+                return
+            }
+            
+            //Bruk data som [String : AnyObject]
+            
+        } catch {
+            print("Error: catched unknown error")
+            return
+        }
+    }
+```
+
+Felter i et slikt JSON-objekt kan hentes ut ved å skrive:
+
+```swift
+if let value = data["value"] as? String {
+    // Bruk value
+}
+```
 
 #### Oppgave 4. MotionViewController
 Implementer en View Controller som bruker CoreMotion til å utforske sensordata fra både akselerometeret og magnetometeret.
