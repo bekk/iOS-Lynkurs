@@ -4,11 +4,8 @@
 Snarveier i Xcode:
 
 ```CMD + R``` bygger og kjører prosjekt.
-
 ```CMD + B``` bygger prosjekt.
-
 ```CMD + U``` kjører kun tester.
-
 ```CMD + Option + Enter ``` åpner Assistant Editor.
 
 ## Lynkurs-01-Swift
@@ -39,8 +36,7 @@ Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in..
 #### Oppgave 1: ConverterViewController
 Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vica versa.
 
-Tips:
-
+**Tips:**
 Enten kan verdien hentes ut fra ```textfield```ved å kalle ```textfield.text```
 
 For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ``handleValue``` kalles med tekstfeltet som argument når det skjer noe.
@@ -79,7 +75,7 @@ Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 #### Oppgave 7. ListViewController
 Lag en liste hvor man kan legge til og slette elementer.
 
-Tips:
+**Tips:**
 Sjekk ut ```File -> New Project.. -> Master-Detail Application``` 
 
 ### Andre tips:
