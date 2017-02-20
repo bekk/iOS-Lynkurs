@@ -83,7 +83,7 @@ textField.text = "\(value)"
 #### Oppgave 2: MapViewController
 Bruk Apple Maps til å vise et kart hvor... 
 
-![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewController.png "MapsViewController")
+![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png "MapsViewController")
 
 #### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
