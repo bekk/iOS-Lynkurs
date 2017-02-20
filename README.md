@@ -31,8 +31,8 @@ Se gjerne på løsningsforslaget om du står fast.
 ###Oppgaver:
 Oppgavene går ut på å opprette egne views (ViewController i Storyboard + NavnViewControllers.swift) og knytte disse sammen med hovedviewet.
 
-#### 0: NavigationController
-For at views skal ha en navigasjon tilbake til hovedview kan du velge å legge til en Navigation Controller.
+#### Oppgave 0: NavigationController
+For at views skal kunne navigere tilbake til hoved viewet kan du velge å legge til en Navigation Controller.
 
 Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in.. -> Navigation Controller```.
 
