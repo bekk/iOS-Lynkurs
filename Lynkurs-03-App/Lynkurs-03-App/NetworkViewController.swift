@@ -15,7 +15,7 @@ class NetworkViewController: UIViewController {
     @IBOutlet weak var input: UITextField!
 
     @IBOutlet weak var textBox: UITextView!
-    
+
     @IBAction func getButton(_ sender: Any) {
         if let number = Int(input.text!) {
             get(urlString: "https://swapi.co/api/people/\(number)/?format=json")
@@ -65,7 +65,7 @@ class NetworkViewController: UIViewController {
 
     func updateView(person: [String: AnyObject]) {
         DispatchQueue.main.async {
-            
+
             self.textBox.text = "\(person)"
             if let personName = person["name"] as? String {
                 self.name.text = personName

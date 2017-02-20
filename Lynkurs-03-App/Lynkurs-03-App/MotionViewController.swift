@@ -26,6 +26,7 @@ class MotionViewController: UIViewController {
         super.viewDidLoad()
         title = "Motion"
         setupAccelerometerUpdates()
+        setupMagnetometerUpdates()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
