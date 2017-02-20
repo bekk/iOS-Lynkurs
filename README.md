@@ -49,6 +49,8 @@ For at views skal kunne navigere tilbake til hoved viewet kan du velge å legge 
 
 Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in.. -> Navigation Controller```.
 
+![NavigationControllerExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/NavigationControllerExample.png "NavigationControllerExample")
+
 #### Oppgave 1: ConverterViewController
 Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vice versa.
 
