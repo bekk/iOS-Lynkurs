@@ -18,7 +18,6 @@ class ConverterViewController: UIViewController {
         title = "Converter"
 
         fahrenheit.addTarget(self, action: #selector(textFieldValueChanged(_:)), for: .editingChanged)
-
         celsius.addTarget(self, action: #selector(textFieldValueChanged(_:)), for: .editingChanged)
     }
 
