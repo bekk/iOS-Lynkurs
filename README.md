@@ -18,6 +18,8 @@
 ```CMD + 1``` Åpner left toolbar (Filstruktur, Søk, Breakpoints etc)
 
 ```CMD + Option + 1``` Åpner right toolbar (Properties, Segues etc)
+
+```Option + mus-klikk``` på Metode, variabel eller klasse viser mer informasjon
  
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
@@ -52,7 +54,7 @@ Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in..
 ![NavigationControllerExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/NavigationControllerExample.png "NavigationControllerExample")
 
 #### Oppgave 1: ConverterViewController
-Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vice versa.
+Implementer en View Controller hvor bruker kan konvertere fra fahrenheit til celsius og vice versa.
 
 
 ![ConvertViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png "ConvertViewController")
@@ -111,7 +113,23 @@ mapView.addAnnotations(markers)
 GET og POST data mot API og vis på fornuftig måte.
 
 #### Oppgave 4. MotionViewController
-Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
+Implementer en View Controller som bruker CoreMotion til å utforske sensordata fra både akselerometeret og magnetometeret.
+
+Obs: fungerer ikke på Simulator, krever at man kan teste på enhet.
+
+```swift
+import CoreMotion
+
+let motionManager = CMMotionManager()
+let updateIntervalInSeconds = 0.2
+
+motionManager.accelerometerUpdateInterval = updateIntervalInSeconds
+motionManager.startAccelerometerUpdates(to: OperationQueue.main) {(accelerometerData: CMAccelerometerData?, error: Error?) in
+    // Bruk accelerometerData
+}
+```
+
+Tips: Sjekk hva som finnes i accelerometerData med ```Option + musklikk```. Magnetometer kan brukes på tilsvarende måte.
 
 #### Oppgave 5. ImageViewController
 **TODO:** Hent og vis bilder lagret på simulator eller enhet.
