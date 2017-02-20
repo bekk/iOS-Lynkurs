@@ -19,7 +19,7 @@
 
 ```CMD + Option + 1``` Åpner right toolbar (Properties, Segues etc)
 
-```Option + mus-klikk``` på Metode, variabel eller klasse viser mer informasjon
+```Option + musklikk``` på Metode, variabel eller klasse viser mer informasjon
  
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
