@@ -23,7 +23,10 @@ Lær deg basic iOS og Xcode ved å lag følgende:
 Om ikke outlets eller actions fungerer, sjekk at du ikke har laget for mange knyttet til samme objekt.
 
 ## Lynkurs-03-App
-I denne delen skal du lage forskjellige views som tar i bruk forskjellige deler av funksjonaliteten på iOS. Om du Alternativt kan du ut
+I denne delen skal du lage forskjellige views som tar i bruk forskjellige deler av funksjonaliteten på iOS. 
+Lag et nytt prosjekt i Xcode ved å trykke ```File -> New Project.. -> Single View Application```. Deretter kan åpne ```Main.storyboard```, her skal du bygge opp alle oppgavene.
+
+Se gjerne på løsningsforslaget om du står fast. 
 
 ###Oppgaver:
 Oppgavene går ut på å opprette egne views (ViewController i Storyboard + NavnViewControllers.swift) og knytte disse sammen med hovedviewet.
@@ -35,11 +38,15 @@ Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in..
 
 #### Oppgave 1: ConverterViewController
 Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vice versa.
-![alt text](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png "ConvertViewController")
+
+
+![ConvertViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png "ConvertViewController")
 
 **Tips:**
 
-Enten kan verdien hentes ut fra ```textfield```ved å kalle ```textfield.text```
+Det er ofte en fordel å starte med å sette opp Text Fields og Text Labels i Storyboard først, som i Lynkurs-02-iOS. Knytt deretter disse opp mot en ny View Controller som IBOutlets.
+
+Verdi hentes ut fra ```textfield```ved å kalle ```textfield.text```
 
 For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ``handleValue``` kalles med tekstfeltet som argument når det skjer noe.
 ```
