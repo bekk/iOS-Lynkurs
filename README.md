@@ -1,13 +1,24 @@
 # iOS-Lynkurs
 
 
-Snarveier i Xcode:
+#### Vanlige Snarveier i Xcode:
 
 ```CMD + R``` bygger og kjører prosjekt.
+
 ```CMD + B``` bygger prosjekt.
-```CMD + U``` kjører kun tester.
+
+```CMD + U``` kjører tester (dersom de er satt opp under appens Scheme)
+
 ```CMD + Option + Enter ``` åpner Assistant Editor.
 
+```CMD + F ``` Søk i åpen fil
+
+```CMD + Shift + F ``` Søk i hele prosjekt
+
+```CMD + 1``` Åpner left toolbar (Filstruktur, Søk, Breakpoints etc)
+
+```CMD + Option + 1``` Åpner right toolbar (Properties, Segues etc)
+ 
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
 
