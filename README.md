@@ -62,12 +62,12 @@ Det er ofte en fordel å starte med å sette opp Text Fields og Text Labels i St
 Verdi hentes ut fra ```textfield```ved å kalle ```textfield.text```
 
 For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ``handleValue``` kalles med tekstfeltet som argument når det skjer noe.
-```
+```swift
 textfield.addTarget(self, action: #selector(handleValue(_:)), for: .editingChanged)
 ```
 
 Deretter kan verdien fra det generiske input feltet håndteres 
-```
+```swift
 func handleValue(_ textField: UITextField) {
     if let value: Double = Double(textField.text!) {
         //Bruk verdi
@@ -75,10 +75,15 @@ func handleValue(_ textField: UITextField) {
 }
 ```
 
-Verdier kan settes på tilsvarende måte med ```textField.text = "\(value)"```.
+Verdier kan settes på tilsvarende måte med:
+```swift
+textField.text = "\(value)"
+```
 
 #### Oppgave 2: MapViewController
 Bruk Apple Maps til å vise et kart hvor... 
+
+![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewController.png "MapsViewController")
 
 #### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
