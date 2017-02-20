@@ -66,25 +66,24 @@ func handleValue(_ textField: UITextField) {
 
 Verdier kan settes på tilsvarende måte med ```textField.text = "\(value)"```.
 
-
 #### Oppgave 2: MapViewController
 Bruk Apple Maps til å vise et kart hvor... 
 
 #### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
 
-#### Oppgave 4. ImageViewController
-Hent og vis bilder lagret på simulator eller enhet.
-
-#### Oppgave 5. CameraViewController
-Ta bilder med kamera og bruk dem i App.
+#### Oppgave 4. MotionViewController
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
-#### Oppgave 6. MotionViewController
+#### Oppgave 5. ImageViewController
+**TODO:** Hent og vis bilder lagret på simulator eller enhet.
+
+#### Oppgave 6. CameraViewController
+**TODO:** Ta bilder med kamera og bruk dem i App.
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
 #### Oppgave 7. ListViewController
-Lag en liste hvor man kan legge til og slette elementer.
+**TODO:** Lag en liste hvor man kan legge til og slette elementer.
 
 **Tips:**
 Sjekk ut ```File -> New Project.. -> Master-Detail Application``` 
