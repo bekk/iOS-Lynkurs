@@ -11,24 +11,25 @@ import UIKit
 class NetworkViewController: UIViewController {
 
     @IBOutlet weak var name: UILabel!
-
     @IBOutlet weak var input: UITextField!
-
     @IBOutlet weak var textBox: UITextView!
 
     @IBAction func getButton(_ sender: Any) {
         if let number = Int(input.text!) {
-            get(urlString: "https://swapi.co/api/people/\(number)/?format=json")
+            getPersonFromSwapi(personNumber: number)
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         title = "Network"
-        get(urlString: "https://swapi.co/api/people/1/?format=json")
+        getPersonFromSwapi(personNumber: 1)
     }
 
-    func get(urlString: String) {
+    func getPersonFromSwapi(personNumber: Int) {
+
+        let urlString = "https://swapi.co/api/people/\(personNumber)/?format=json"
         let request = URLRequest(url: URL(string: urlString)!)
         let session = URLSession.shared
 
@@ -43,6 +44,7 @@ class NetworkViewController: UIViewController {
                 print("Error: did not receive data")
                 return
             }
+
             self.parseResponse(responseData: responseData)
         })
 
@@ -50,22 +52,24 @@ class NetworkViewController: UIViewController {
     }
 
     func parseResponse(responseData: Data) {
+
         do {
             guard let person = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: AnyObject] else {
-                print("Serialization failed")
+                print("Error: Serialization failed")
                 return
             }
+
             updateView(person: person)
 
         } catch {
-            print("catch error")
+            print("Error: catched unknown error")
             return
         }
     }
 
     func updateView(person: [String: AnyObject]) {
-        DispatchQueue.main.async {
 
+        DispatchQueue.main.async {
             self.textBox.text = "\(person)"
             if let personName = person["name"] as? String {
                 self.name.text = personName
