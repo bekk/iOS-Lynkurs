@@ -26,6 +26,8 @@ Om ikke outlets eller actions fungerer, sjekk at du ikke har laget for mange kny
 I denne delen skal du lage forskjellige views som tar i bruk forskjellige deler av funksjonaliteten på iOS. 
 Lag et nytt prosjekt i Xcode ved å trykke ```File -> New Project.. -> Single View Application```. Deretter kan åpne ```Main.storyboard```, her skal du bygge opp alle oppgavene.
 
+![StoryboardExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/StoryboardExample.png "StoryboardExample")
+
 Se gjerne på løsningsforslaget om du står fast. 
 
 ###Oppgaver:
