@@ -34,9 +34,11 @@ For at views skal ha en navigasjon tilbake til hovedview kan du velge å legge t
 Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in.. -> Navigation Controller```.
 
 #### Oppgave 1: ConverterViewController
-Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vica versa.
+Implementer en View Controller hvor bruker kan konverte grader fra fahrenheit til celsius og vice versa.
+![alt text](https://github.com/bekk/iOS-Lynkurs/Assets/ConverterViewControllerExample.png "ConvertViewController")
 
 **Tips:**
+
 Enten kan verdien hentes ut fra ```textfield```ved å kalle ```textfield.text```
 
 For å merke endringer i et Text Field kan du implementere en lytter, hvor metoden ``handleValue``` kalles med tekstfeltet som argument når det skjer noe.
