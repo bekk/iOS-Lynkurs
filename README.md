@@ -167,6 +167,10 @@ if let value = data["value"] as? String {
 }
 ```
 
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/NetworkViewControllerExample.png" alt="alt text" width="400" height="auto">
+
+
+
 Dersom endepunktet er usikkert(HTTP) og ikke sikkert (HTTPS) er du nødt til å lage noen unntak i ```Info.plist``` for å kunne nå endepunktet.
 
 ![HttpEndpointExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/HttpEndpointExample.png "HttpEndpointExample")
@@ -210,9 +214,6 @@ Tips: Sjekk hva som finnes i accelerometerData med ```Option + musklikk```. Magn
 Implementer en View Controller som autentiserer fingeravtrykk med Touch ID.
 
 <img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/TouchIDViewControllerExample.png" alt="alt text" width="400" height="auto">
-
-Se [TouchIDViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Lynkurs-03-App/Lynkurs-03-App/TouchIDViewController.swift) for løsningsforslag.
-
 
 #### Oppgave 7. ImageViewController
 **TODO:** Hent og vis bilder lagret på simulator eller enhet.
