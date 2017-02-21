@@ -47,9 +47,14 @@ Hold inne ```Ctrl``` og klikk på et element (Button, Label, Text Field) og dra 
 
 På samme måte kan man dra fra en Button over til et annen View Controller i Storyboard. Dette vil opprette en ```segue```, som gjør at knappen åpner et annet view og legger det over sitt eget. Hvordan selve overgangen skal oppføre seg velges når man slipper ```Ctrl```
 
-**Auto Layout Constraint:**
+**Auto Layout:**
 
-Tilsvarende kan man dra fra element til eget view for å stille inn såkalte ```Constraints```, som kan ses på som regler som forteller hvordan UI skal se ut når appen kjører. Typiske ```Constraints``` er å midtstille horisontalt eller vertikalt, sette hvor stor relativ avstand det skal være til top, bunn, side eller andre elementer. Slik kan man lage en Auto Layout som oppfører seg likest mulig, uavhengig av skjermstørrelse eller skjermforhold.
+Når man skal lage view layouts i iOS, kan man typisk enten bruke Stack Views eller Constraints. 
+[Les mer om Auto Layout på developer.apple.com](https://developer.apple.com/library/content/documentation/UserExperience/Conceptual/AutolayoutPG/)
+
+**Auto Layout Constraints:**
+
+Tilsvarende IBOutlets kan man ```Ctrl + dra``` fra element til eget view for å stille inn såkalte ```Constraints```, som kan ses på som regler som forteller hvordan UI skal se ut når appen kjører. Typiske ```Constraints``` er å midtstille horisontalt eller vertikalt, sette hvor stor relativ avstand det skal være til top, bunn, side eller andre elementer. Slik kan man lage en Auto Layout som oppfører seg likest mulig, uavhengig av skjermstørrelse eller skjermforhold.
 
 Dette vil bli demonstrert flere ganger underveis i kurset.
 
