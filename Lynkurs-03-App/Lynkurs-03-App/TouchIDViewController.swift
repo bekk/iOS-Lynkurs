@@ -14,6 +14,7 @@ import LocalAuthentication
 class TouchIDViewController : UIViewController {
     
     @IBOutlet weak var message: UILabel!
+    
     var context = LAContext()
     
     override func viewDidLoad() {
@@ -26,7 +27,7 @@ class TouchIDViewController : UIViewController {
         
         var error: NSError?
         guard context.canEvaluatePolicy(policy, error: &error) else {
-            print("Error: \(error)")
+            print("Error: canEvaluatePolicy \(error)")
             return
         }
         
