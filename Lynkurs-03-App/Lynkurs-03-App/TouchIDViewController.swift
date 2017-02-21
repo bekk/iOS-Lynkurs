@@ -11,40 +11,40 @@
 import UIKit
 import LocalAuthentication
 
-class TouchIDViewController : UIViewController {
-    
+class TouchIDViewController: UIViewController {
+
     @IBOutlet weak var message: UILabel!
-    
+
     var context = LAContext()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAuthenticationPolicy()
     }
-    
+
     func setupAuthenticationPolicy() {
         let policy: LAPolicy = .deviceOwnerAuthentication
-        
+
         var error: NSError?
         guard context.canEvaluatePolicy(policy, error: &error) else {
             print("Error: canEvaluatePolicy \(error)")
             return
         }
-        
+
         login(policy: policy)
     }
-    
+
     func login(policy: LAPolicy) {
         context.evaluatePolicy(policy, localizedReason: "Need for demo", reply: { (success, error) in
-            
+
             guard success else {
             // Not success
-                
+
                 guard let error = error else {
                     print("Error: evaluatePolicy failed without error")
                     return
                 }
-                
+
                 switch(error) {
                 case LAError.touchIDLockout:
                     self.message.text = "There were too many failed Touch ID attempts and Touch ID is now locked."
@@ -58,7 +58,7 @@ class TouchIDViewController : UIViewController {
                 }
                 return
             }
-            
+
             // Success
             DispatchQueue.main.async {
                 self.message.text = "Successfully logged in! 👍"
