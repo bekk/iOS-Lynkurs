@@ -43,6 +43,29 @@ Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Targ
 ####Oppgaver: 
 Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` fungerer. 
 
+####Oppgaver: 
+Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` fungerer. 
+
+**Eksempel:**
+```swift
+
+//PersonTests.swift
+
+func testAge() {
+    XCTAssertTrue(kylie.age > 0, "should be older")
+}
+
+//Person.swift
+
+init(firstName: String, lastName: String, gender: String, age: Int) {
+    //...
+    self.age = 0
+}
+
+```
+
+Testen feiler fordi forventet ```age``` ikke blir returnert. Om man ser i konstruktøren til ```Person.swift```, kan man se at self.age alltid blir satt til 0. Prøv å endre denne til verdien man får som argument.
+
 ## Lynkurs-02-iOS
 Lær deg basic iOS og Xcode ved å lag følgende: 
 
