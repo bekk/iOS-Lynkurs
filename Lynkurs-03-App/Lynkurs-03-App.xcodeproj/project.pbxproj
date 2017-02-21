@@ -17,6 +17,7 @@
 		35E3C9DE1E547D9800E94B63 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9DD1E547D9800E94B63 /* ConverterViewController.swift */; };
 		35E3C9E01E5481F200E94B63 /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9DF1E5481F200E94B63 /* MotionViewController.swift */; };
 		35E3C9E21E5486BD00E94B63 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */; };
+		9C7741FB1E5C9CF200870975 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7741FA1E5C9CF200870975 /* TouchIDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		35E3C9DD1E547D9800E94B63 /* ConverterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		35E3C9DF1E5481F200E94B63 /* MotionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
 		35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		9C7741FA1E5C9CF200870975 /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				35E3C9E11E5486BD00E94B63 /* NetworkViewController.swift */,
 				35B74DF51E573C6300C75FA6 /* MapsViewController.swift */,
 				35237FF71E5A4939008C13BA /* SettingsViewController.swift */,
+				9C7741FA1E5C9CF200870975 /* TouchIDViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				35E3C9E01E5481F200E94B63 /* MotionViewController.swift in Sources */,
 				35B74DF61E573C6300C75FA6 /* MapsViewController.swift in Sources */,
 				35E3C9E21E5486BD00E94B63 /* NetworkViewController.swift in Sources */,
+				9C7741FB1E5C9CF200870975 /* TouchIDViewController.swift in Sources */,
 				35237FF81E5A4939008C13BA /* SettingsViewController.swift in Sources */,
 				35E3C9DE1E547D9800E94B63 /* ConverterViewController.swift in Sources */,
 			);

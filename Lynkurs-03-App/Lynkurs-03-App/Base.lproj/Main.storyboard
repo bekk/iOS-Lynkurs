@@ -63,6 +63,13 @@
                                     <segue destination="t0V-pq-daI" kind="show" id="mww-d9-Ik9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4X-8w-mqD">
+                                <rect key="frame" x="179" y="378" width="57" height="30"/>
+                                <state key="normal" title="TouchID"/>
+                                <connections>
+                                    <segue destination="Rtc-iX-hpJ" kind="show" id="RWV-6x-zwx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -73,11 +80,13 @@
                             <constraint firstItem="3o3-Ko-dcg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LyR-0g-AcA"/>
                             <constraint firstItem="na9-ie-57T" firstAttribute="top" secondItem="kv4-9N-x6O" secondAttribute="bottom" constant="10" id="Sok-yW-r4R"/>
                             <constraint firstItem="kv4-9N-x6O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X84-n4-bib"/>
+                            <constraint firstItem="g4X-8w-mqD" firstAttribute="top" secondItem="n07-8t-alA" secondAttribute="bottom" constant="11" id="XV9-L1-qjg"/>
                             <constraint firstItem="bS0-G0-B5o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YpO-Nd-yO1"/>
                             <constraint firstItem="3o3-Ko-dcg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="110" id="ZP4-Om-x7f"/>
                             <constraint firstItem="na9-ie-57T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5O-DX-4TW"/>
                             <constraint firstItem="Ake-4N-koZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="ikY-zY-O0R"/>
                             <constraint firstItem="n07-8t-alA" firstAttribute="top" secondItem="bS0-G0-B5o" secondAttribute="bottom" constant="10" id="zhd-55-J5i"/>
+                            <constraint firstItem="g4X-8w-mqD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zzM-DV-hLT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zw0-FP-yT7"/>
@@ -144,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mft-GS-qZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="-951"/>
+            <point key="canvasLocation" x="702" y="-2354"/>
         </scene>
         <!--Maps View Controller-->
         <scene sceneID="0nL-LG-H10">
@@ -176,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0bv-HK-o0E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="-645"/>
+            <point key="canvasLocation" x="1501" y="-2235"/>
         </scene>
         <!--Network View Controller-->
         <scene sceneID="CCD-VG-Idj">
@@ -257,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiq-rL-H9z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="19"/>
+            <point key="canvasLocation" x="2171" y="-1650"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="RKL-LZ-5uC">
@@ -301,7 +310,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aod-6Z-2ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="64" y="638"/>
+            <point key="canvasLocation" x="2848" y="-505"/>
+        </scene>
+        <!--TouchID View Controller-->
+        <scene sceneID="jk2-Ha-3W5">
+            <objects>
+                <viewController id="Rtc-iX-hpJ" customClass="TouchIDViewController" customModule="Lynkurs_03_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3QP-4E-red"/>
+                        <viewControllerLayoutGuide type="bottom" id="sUD-KZ-IBz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eyV-Q4-sUW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CjQ-vU-DGV">
+                                <rect key="frame" x="20" y="221" width="374" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CjQ-vU-DGV" firstAttribute="centerX" secondItem="eyV-Q4-sUW" secondAttribute="centerX" id="21O-Cy-90d"/>
+                            <constraint firstItem="CjQ-vU-DGV" firstAttribute="leading" secondItem="eyV-Q4-sUW" secondAttribute="leadingMargin" id="qqa-fj-xXz"/>
+                            <constraint firstItem="CjQ-vU-DGV" firstAttribute="top" secondItem="3QP-4E-red" secondAttribute="bottom" constant="157" id="yRa-Yi-Xd4"/>
+                            <constraint firstItem="CjQ-vU-DGV" firstAttribute="centerX" secondItem="eyV-Q4-sUW" secondAttribute="centerX" id="zl6-Td-JOt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="message" destination="CjQ-vU-DGV" id="DrT-J9-R15"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gSN-p2-AHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2847.826086956522" y="155.70652173913044"/>
         </scene>
         <!--Motion View Controller-->
         <scene sceneID="9gg-c7-A9Z">
@@ -426,7 +470,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yYQ-xU-WBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="881" y="578"/>
+            <point key="canvasLocation" x="2170" y="-1006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="De2-uw-ajh">
