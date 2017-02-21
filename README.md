@@ -17,7 +17,7 @@ Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang
   - **7:** ⭐️ Oppgaveløsning av utvidet funksjonalitet. Anbefalt forslag til rekkefølge er gitt under ```Lynkurs-03-App```, men deltakere står fritt til å velge hvordan de ønsker å kombinere funksjonalitet selv. 🤠
 
 =======================================================================================================================================
-#### Vanlige Snarveier i Xcode:
+#### Snarveier i Xcode:
 
 ```CMD + R``` bygger og kjører prosjekt.
 
@@ -35,13 +35,21 @@ Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang
 
 ```CMD + Option + 1``` Åpner right toolbar (Properties, Segues etc)
 
-```Option + musklikk``` på Metode, variabel eller klasse viser mer informasjon
- 
+```Option + musklikk``` på metode, variabel eller klasse viser mer informasjon
+
+**Storyboard:**
+
+**Knytte element i View til View Controller:**
+
+Hold inne ```Ctrl``` og klikk på et element (Button, Label, Text Field) og dra muspeker over i korresponderende View Controller i Assistant Editor. Slipp og velg om du vil ha en ```IBOutlet``` eller ```IBAction```. 
+
+**Åpne annen View Controller:**
+
+På samme måte kan man dra fra en Button over til et annen View Controller i Storyboard. Dette vil opprette en ```segue```, som gjør at knappen åpner et annet view og legger det over sitt eget. Hvordan selve overgangen skal oppføre seg velges når man slipper ```Ctrl```
+.
+
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
-
-####Oppgaver: 
-Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` fungerer. 
 
 ####Oppgaver: 
 Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` fungerer. 
