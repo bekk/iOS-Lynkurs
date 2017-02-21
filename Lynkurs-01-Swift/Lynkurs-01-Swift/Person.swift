@@ -15,7 +15,10 @@ class Person {
     var age: Int
     
     init(firstName: String, lastName: String, gender: String, age: Int) {
-
+        self.firstName = ""
+        self.lastName = ""
+        self.gender = ""
+        self.age = 0
     }
     
     func fullName() -> String {

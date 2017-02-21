@@ -25,7 +25,7 @@ class PersonTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-
+    
     func testFirstName() {
         XCTAssert(kylie.firstName == "Kylie", "Returned \(kylie.firstName) , should be Kylie")
     }
@@ -37,12 +37,18 @@ class PersonTests: XCTestCase {
     func testFullName() {
         XCTAssert(kylie.fullName() == "Kylie Jenner", "Returned \(kylie.fullName()) , should be Kylie Jenner")
     }
-
+    
+    func testAge() {
+        XCTAssertTrue(kylie.age > 0, "should be older")
+    }
+    
     func testCanBuyBeerInNorway() {
+        XCTAssertTrue(kylie.age > 0, "should be older")
         XCTAssert(kylie.canBuyBeerIn(country: "Norway"), "Returned \(kylie.canBuyBeerIn(country: "Norway")) , should be true")
     }
 
     func testCanBuyBeerInUSA() {
+        XCTAssertTrue(kylie.age > 0, "should be older")
         XCTAssert(kylie.canBuyBeerIn(country: "USA") == false, "Returned \(kylie.canBuyBeerIn(country: "USA")), should be false")
     }
 
