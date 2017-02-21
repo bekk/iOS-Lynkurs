@@ -31,8 +31,12 @@ Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` 
 Lær deg basic iOS og Xcode ved å lag følgende: 
 
 ###Oppgaver:
-#### Oppgave 1: Lag det Oscar lagde på demoen, gjerne med litt ekstra farger og pynt.
-#### Oppgave 2: Fjern knappen og få labelen til å endre tekst ved at den lytter på endringer i input-feltet.
+
+#### Oppgave 1: 
+Lag det Oscar lagde på demoen, gjerne med litt ekstra farger og pynt.
+
+#### Oppgave 2: 
+Fjern knappen og få labelen til å endre tekst ved at den lytter på endringer i input-feltet.
 
 ####Tips:
 Om ikke outlets eller actions fungerer, sjekk at du ikke har laget for mange knyttet til samme objekt.
