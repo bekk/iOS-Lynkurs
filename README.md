@@ -56,8 +56,7 @@ Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in..
 #### Oppgave 1: ConverterViewController
 Implementer en View Controller hvor bruker kan konvertere fra fahrenheit til celsius og vice versa.
 
-
-![ConvertViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png "ConvertViewController")
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png" alt="alt text" width="400" height="auto">
 
 **Tips:**
 
@@ -108,7 +107,7 @@ Disse kan du legge til på kartet ved å skrive:
 mapView.addAnnotations(markers)
 ```
 
-![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png "MapsViewController")
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png" alt="alt text" width="400" height="auto">
 
 #### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
@@ -186,7 +185,7 @@ UserDefaults.standard.integer(forKey: "mykey")
 ```
 Løsningsforslaget viser hvordan man kan representere denne verdien med en slider ved hjelp av UISlider:
 
-![SettingsViewControllerExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/SettingsViewControllerExample.png "SettingsViewControllerExample")
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/SettingsViewControllerExample.png" alt="alt text" width="400" height="auto">
 
 #### Oppgave 5. MotionViewController
 Implementer en View Controller som bruker CoreMotion til å utforske sensordata fra både akselerometeret og magnetometeret.
@@ -210,8 +209,10 @@ Tips: Sjekk hva som finnes i accelerometerData med ```Option + musklikk```. Magn
 #### Oppgave 6. TouchIDViewController
 Implementer en View Controller som autentiserer fingeravtrykk med Touch ID.
 
-![TouchIDViewControllerExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/TouchIDViewControllerExample.png "TouchIDViewControllerExample")
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/TouchIDViewControllerExample.png" alt="alt text" width="400" height="auto">
+
 Se [TouchIDViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Lynkurs-03-App/Lynkurs-03-App/TouchIDViewController.swift) for løsningsforslag.
+
 
 #### Oppgave 7. ImageViewController
 **TODO:** Hent og vis bilder lagret på simulator eller enhet.
