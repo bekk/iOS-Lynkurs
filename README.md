@@ -1,5 +1,20 @@
 # iOS-Lynkurs
 
+Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang med native apputvikling i Xcode. Det er delt inn i følgende hoveddeler:
+
+- **1:** 🍏 Generell introduksjon til kurset og plattformen
+
+- **2:** 🔨 Enkel gjennomgang av programmeringsspråket Swift og utviklingsverktøyet Xcode
+  
+  - **3:** ✅ Klassike oppgaveløsning av Swift oppgaver, hvor målet er å få alle testene til å bestå.
+
+- **4:** 🤔 Demonstrasjon av hvordan man oppretter et enkelt iOS-prosjekt i Xcode, og de nødvendige stegene for å lage en app man kan bruke.
+  
+  - **5:** 💻 Oppgaveløsning hvor man selv skal lage tilsvarende app på egen maskin. 
+
+- **6:** 📱Demonstrasjon av hvordan appen kan utvides med navigasjon og flere views med ytterligere funksjonalitet.
+  
+  - **7:** ⭐️ Oppgaveløsning av utvidet funksjonalitet. Anbefalt forslag til rekkefølge er gitt under ```Lynkurs-03-App```, men deltakere står fritt til å velge hvordan de ønsker å kombinere funksjonalitet selv. 🤠
 
 #### Vanlige Snarveier i Xcode:
 
