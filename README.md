@@ -1,6 +1,22 @@
 # iOS-Lynkurs
 
+Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang med native apputvikling i Xcode. Det er delt inn i følgende hoveddeler:
 
+- **1:** 🍏 Generell introduksjon til kurset og plattformen
+
+- **2:** 🔨 Enkel gjennomgang av programmeringsspråket Swift og utviklingsverktøyet Xcode
+  
+  - **3:** ✅ Klassike oppgaveløsning av Swift oppgaver, hvor målet er å få alle testene til å bestå.
+
+- **4:** 🤔 Demonstrasjon av hvordan man oppretter et enkelt iOS-prosjekt i Xcode, og de nødvendige stegene for å lage en app man kan bruke.
+  
+  - **5:** 💻 Oppgaveløsning hvor man selv skal lage tilsvarende app på egen maskin. 
+
+- **6:** 📱Demonstrasjon av hvordan appen kan utvides med navigasjon og flere views med ytterligere funksjonalitet.
+  
+  - **7:** ⭐️ Oppgaveløsning av utvidet funksjonalitet. Anbefalt forslag til rekkefølge er gitt under ```Lynkurs-03-App```, men deltakere står fritt til å velge hvordan de ønsker å kombinere funksjonalitet selv. 🤠
+
+=======================================================================================================================================
 #### Vanlige Snarveier i Xcode:
 
 ```CMD + R``` bygger og kjører prosjekt.
@@ -32,6 +48,12 @@ Lær deg basic iOS og Xcode ved å lag følgende:
 
 ###Oppgaver:
 
+#### Oppgave 1: 
+Lag det Oscar lagde på demoen, gjerne med litt ekstra farger og pynt.
+
+#### Oppgave 2: 
+Fjern knappen og få labelen til å endre tekst ved at den lytter på endringer i input-feltet.
+
 ####Tips:
 Om ikke outlets eller actions fungerer, sjekk at du ikke har laget for mange knyttet til samme objekt.
 
@@ -56,8 +78,7 @@ Tips: Velg header hovedview i Main.storyboard, klikk på ```Editor -> Embed in..
 #### Oppgave 1: ConverterViewController
 Implementer en View Controller hvor bruker kan konvertere fra fahrenheit til celsius og vice versa.
 
-
-![ConvertViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png "ConvertViewController")
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/ConvertViewControllerExample.png" alt="alt text" width="400" height="auto">
 
 **Tips:**
 
@@ -108,7 +129,7 @@ Disse kan du legge til på kartet ved å skrive:
 mapView.addAnnotations(markers)
 ```
 
-![MapsViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png "MapsViewController")
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/MapsViewControllerExample.png" alt="alt text" width="400" height="auto">
 
 #### Oppgave 3. NetworkViewController
 GET og POST data mot API og vis på fornuftig måte.
@@ -168,12 +189,31 @@ if let value = data["value"] as? String {
 }
 ```
 
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/NetworkViewControllerExample.png" alt="alt text" width="400" height="auto">
+
+
+
 Dersom endepunktet er usikkert(HTTP) og ikke sikkert (HTTPS) er du nødt til å lage noen unntak i ```Info.plist``` for å kunne nå endepunktet.
 
 ![HttpEndpointExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/HttpEndpointExample.png "HttpEndpointExample")
 
+#### Oppgave 4. SettingsViewController
+Implementer en View Controller som kan lagre og hente data fra [UserDefaults](See https://developer.apple.com/reference/foundation/userdefaults).
 
-#### Oppgave 4. MotionViewController
+**UserDefaults** er et enkelt key/value lager tiltenkt enkel data som innstillinger og lignende. Det er ikke nødvendig å importere noe ekstra for å bruke UserDefaults. For å lagre en integer holder det å skrive:
+
+```swift
+UserDefaults.standard.set(value, forKey: "mykey")
+```
+Denne kan hentes ut ved å skrive:
+```swift
+UserDefaults.standard.integer(forKey: "mykey")
+```
+Løsningsforslaget viser hvordan man kan representere denne verdien med en slider ved hjelp av UISlider:
+
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/SettingsViewControllerExample.png" alt="alt text" width="400" height="auto">
+
+#### Oppgave 5. MotionViewController
 Implementer en View Controller som bruker CoreMotion til å utforske sensordata fra både akselerometeret og magnetometeret.
 
 Obs: fungerer ikke på Simulator, krever at man kan teste på enhet.
@@ -192,14 +232,19 @@ motionManager.startAccelerometerUpdates(to: OperationQueue.main) {(accelerometer
 
 Tips: Sjekk hva som finnes i accelerometerData med ```Option + musklikk```. Magnetometer kan brukes på tilsvarende måte.
 
-#### Oppgave 5. ImageViewController
+#### Oppgave 6. TouchIDViewController
+Implementer en View Controller som autentiserer fingeravtrykk med Touch ID.
+
+<img src="https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/TouchIDViewControllerExample.png" alt="alt text" width="400" height="auto">
+
+#### Oppgave 7. ImageViewController
 **TODO:** Hent og vis bilder lagret på simulator eller enhet.
 
-#### Oppgave 6. CameraViewController
+#### Oppgave 8. CameraViewController
 **TODO:** Ta bilder med kamera og bruk dem i App.
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
-#### Oppgave 7. ListViewController
+#### Oppgave 9. ListViewController
 **TODO:** Lag en liste hvor man kan legge til og slette elementer.
 
 **Tips:**
