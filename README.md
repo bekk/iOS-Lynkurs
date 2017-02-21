@@ -172,8 +172,23 @@ Dersom endepunktet er usikkert(HTTP) og ikke sikkert (HTTPS) er du nødt til å 
 
 ![HttpEndpointExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/HttpEndpointExample.png "HttpEndpointExample")
 
+#### Oppgave 4. SettingsViewController
+Implementer en View Controller som kan lagre og hente data fra [UserDefaults](See https://developer.apple.com/reference/foundation/userdefaults).
 
-#### Oppgave 4. MotionViewController
+** UserDefaults** er et enkelt key/value lager tiltenkt enkel data som innstillinger og lignende. Det er ikke nødvendig å importere noe ekstra for å bruke UserDefaults. For å lagre en integer holder det å skrive:
+
+```swift
+UserDefaults.standard.set(value, forKey: "mykey")
+```
+Denne kan hentes ut ved å skrive:
+```swift
+UserDefaults.standard.integer(forKey: "mykey")
+```
+Løsningsforslaget viser hvordan man kan representere denne verdien med en slider ved hjelp av UISlider:
+
+![SettingsViewControllerExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/SettingsViewControllerExample.png "SettingsViewControllerExample")
+
+#### Oppgave 5. MotionViewController
 Implementer en View Controller som bruker CoreMotion til å utforske sensordata fra både akselerometeret og magnetometeret.
 
 Obs: fungerer ikke på Simulator, krever at man kan teste på enhet.
@@ -192,14 +207,14 @@ motionManager.startAccelerometerUpdates(to: OperationQueue.main) {(accelerometer
 
 Tips: Sjekk hva som finnes i accelerometerData med ```Option + musklikk```. Magnetometer kan brukes på tilsvarende måte.
 
-#### Oppgave 5. ImageViewController
+#### Oppgave 6. ImageViewController
 **TODO:** Hent og vis bilder lagret på simulator eller enhet.
 
-#### Oppgave 6. CameraViewController
+#### Oppgave 7. CameraViewController
 **TODO:** Ta bilder med kamera og bruk dem i App.
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
-#### Oppgave 7. ListViewController
+#### Oppgave 8. ListViewController
 **TODO:** Lag en liste hvor man kan legge til og slette elementer.
 
 **Tips:**
