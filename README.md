@@ -207,14 +207,20 @@ motionManager.startAccelerometerUpdates(to: OperationQueue.main) {(accelerometer
 
 Tips: Sjekk hva som finnes i accelerometerData med ```Option + musklikk```. Magnetometer kan brukes på tilsvarende måte.
 
-#### Oppgave 6. ImageViewController
+#### Oppgave 6. TouchIDViewController
+Implementer en View Controller som autentiserer fingeravtrykk med Touch ID.
+
+![TouchIDViewControllerExample](https://github.com/bekk/iOS-Lynkurs/blob/master/Assets/TouchIDViewControllerExample.png "TouchIDViewControllerExample")
+Se [TouchIDViewController](https://github.com/bekk/iOS-Lynkurs/blob/master/Lynkurs-03-App/Lynkurs-03-App/TouchIDViewController.swift) for løsningsforslag.
+
+#### Oppgave 7. ImageViewController
 **TODO:** Hent og vis bilder lagret på simulator eller enhet.
 
-#### Oppgave 7. CameraViewController
+#### Oppgave 8. CameraViewController
 **TODO:** Ta bilder med kamera og bruk dem i App.
 Obs: fungerer ikke på Simulator, så krever at man kan teste på enhet.
 
-#### Oppgave 8. ListViewController
+#### Oppgave 9. ListViewController
 **TODO:** Lag en liste hvor man kan legge til og slette elementer.
 
 **Tips:**
