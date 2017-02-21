@@ -200,7 +200,7 @@ Dersom endepunktet er usikkert(HTTP) og ikke sikkert (HTTPS) er du nødt til å 
 #### Oppgave 4. SettingsViewController
 Implementer en View Controller som kan lagre og hente data fra [UserDefaults](See https://developer.apple.com/reference/foundation/userdefaults).
 
-** UserDefaults** er et enkelt key/value lager tiltenkt enkel data som innstillinger og lignende. Det er ikke nødvendig å importere noe ekstra for å bruke UserDefaults. For å lagre en integer holder det å skrive:
+**UserDefaults** er et enkelt key/value lager tiltenkt enkel data som innstillinger og lignende. Det er ikke nødvendig å importere noe ekstra for å bruke UserDefaults. For å lagre en integer holder det å skrive:
 
 ```swift
 UserDefaults.standard.set(value, forKey: "mykey")
