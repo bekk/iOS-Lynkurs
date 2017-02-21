@@ -46,7 +46,12 @@ Hold inne ```Ctrl``` og klikk på et element (Button, Label, Text Field) og dra 
 **Åpne annen View Controller:**
 
 På samme måte kan man dra fra en Button over til et annen View Controller i Storyboard. Dette vil opprette en ```segue```, som gjør at knappen åpner et annet view og legger det over sitt eget. Hvordan selve overgangen skal oppføre seg velges når man slipper ```Ctrl```
-.
+
+**Auto Layout Constraint:**
+
+Tilsvarende kan man dra fra element til eget view for å stille inn såkalte ```Constraints```, som kan ses på som regler som forteller hvordan UI skal se ut når appen kjører. Typiske ```Constraints``` er å midtstille horisontalt eller vertikalt, sette hvor stor relativ avstand det skal være til top, bunn, side eller andre elementer. Slik kan man lage en Auto Layout som oppfører seg likest mulig, uavhengig av skjermstørrelse eller skjermforhold.
+
+Dette vil bli demonstrert flere ganger underveis i kurset.
 
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
