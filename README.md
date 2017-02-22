@@ -6,7 +6,7 @@ Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang
 
 - **2:** 🔨 Enkel gjennomgang av programmeringsspråket Swift og utviklingsverktøyet Xcode
   
-  - **3:** ✅ Klassike oppgaveløsning av Swift oppgaver, hvor målet er å få alle testene til å bestå.
+  - **3:** ✅ Klassik oppgaveløsning av Swift oppgaver, hvor målet er å få alle testene til å fungere.
 
 - **4:** 🤔 Demonstrasjon av hvordan man oppretter et enkelt iOS-prosjekt i Xcode, og de nødvendige stegene for å lage en app man kan bruke.
   
