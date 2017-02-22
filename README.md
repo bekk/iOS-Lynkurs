@@ -23,7 +23,7 @@ Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang
 - 2: Start Xcode 
 - 3: Finn fram et shell (Terminal, iTerm etc) og kjør:
 ```shell
-cd Desktop/
+cd ~/Desktop/
 git clone https://github.com/bekk/iOS-Lynkurs
 open iOS-Lynkurs/
 ``` 
