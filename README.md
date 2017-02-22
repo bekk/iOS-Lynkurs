@@ -17,6 +17,20 @@ Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang
   - **7:** ⭐️ Oppgaveløsning av utvidet funksjonalitet. Anbefalt forslag til rekkefølge er gitt under ```Lynkurs-03-App```. Deltakere står fritt til å velge hvordan de ønsker å kombinere funksjonalitet selv. 🤠
 
 =======================================================================================================================================
+## Oppsett
+
+- 1: Koble til internett
+- 2: Start Xcode 
+- 3: Finn fram et shell (Terminal, iTerm etc) og kjør:
+```shell
+cd Desktop/
+git clone https://github.com/bekk/iOS-Lynkurs
+open iOS-Lynkurs/
+``` 
+
+Tips: For å finne og starte et program på macOS kan du bruke Spotlight! Trykk ```CMD + Space``` 
+
+=======================================================================================================================================
 #### Snarveier i Xcode:
 
 ```CMD + R``` bygger og kjører prosjekt.
