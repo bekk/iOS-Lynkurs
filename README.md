@@ -14,7 +14,7 @@ Kurset er tiltenkt å fungere som et lynkurs for å raskest mulig få deg i gang
 
 - **6:** 📱Demonstrasjon av hvordan appen kan utvides med navigasjon og flere views med ytterligere funksjonalitet.
   
-  - **7:** ⭐️ Oppgaveløsning av utvidet funksjonalitet. Anbefalt forslag til rekkefølge er gitt under ```Lynkurs-03-App```, men deltakere står fritt til å velge hvordan de ønsker å kombinere funksjonalitet selv. 🤠
+  - **7:** ⭐️ Oppgaveløsning av utvidet funksjonalitet. Anbefalt forslag til rekkefølge er gitt under ```Lynkurs-03-App```. Deltakere står fritt til å velge hvordan de ønsker å kombinere funksjonalitet selv. 🤠
 
 =======================================================================================================================================
 #### Snarveier i Xcode:
