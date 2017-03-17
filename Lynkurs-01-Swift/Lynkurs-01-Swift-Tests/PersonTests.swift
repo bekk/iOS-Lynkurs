@@ -15,17 +15,17 @@ class PersonTests: XCTestCase {
     override func setUp() {
         super.setUp()
         kylie = Person(firstName: "Kylie", lastName: "Jenner", gender: "Female", age: 19)
-        kylie.addSibling(sibling: Person(firstName: "Kendall", lastName: "Kardashian", gender: "Female", age: 21))
+        kylie.addSibling(sibling: Person(firstName: "Kendall", lastName: "Jenner", gender: "Female", age: 21))
         kylie.addSibling(sibling: Person(firstName: "Rob", lastName: "Kardashian", gender: "Male", age: 29))
         kylie.addSibling(sibling: Person(firstName: "Khloé", lastName: "Kardashian", gender: "Female", age: 32))
-        kylie.addSibling(sibling: Person(firstName: "Kim", lastName: "Kardashian", gender: "Female", age: 36))
+        kylie.addSibling(sibling: Person(firstName: "Kim", lastName: "Kardashian West", gender: "Female", age: 36))
         kylie.addSibling(sibling: Person(firstName: "Kourtney", lastName: "Kardashian", gender: "Female", age: 37))
     }
 
     override func tearDown() {
         super.tearDown()
     }
-    
+
     func testFirstName() {
         XCTAssert(kylie.firstName == "Kylie", "Returned \(kylie.firstName) , should be Kylie")
     }
@@ -37,11 +37,11 @@ class PersonTests: XCTestCase {
     func testFullName() {
         XCTAssert(kylie.fullName() == "Kylie Jenner", "Returned \(kylie.fullName()) , should be Kylie Jenner")
     }
-    
+
     func testAge() {
         XCTAssertTrue(kylie.age > 0, "should be older")
     }
-    
+
     func testCanBuyBeerInNorway() {
         XCTAssertTrue(kylie.age > 0, "should be older")
         XCTAssert(kylie.canBuyBeerIn(country: "Norway"), "Returned \(kylie.canBuyBeerIn(country: "Norway")) , should be true")
