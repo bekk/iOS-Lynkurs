@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		35DE58281E546FC0002D899E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE58271E546FC0002D899E /* main.swift */; };
-		35DE58371E54716A002D899E /* Lynkurs_01_Swift_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE58361E54716A002D899E /* Lynkurs_01_Swift_Tests.swift */; };
 		35DE583D1E5471A6002D899E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE583C1E5471A6002D899E /* Person.swift */; };
 		35DE583E1E5471B4002D899E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE583C1E5471A6002D899E /* Person.swift */; };
 		35DE58401E5471CB002D899E /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DE583F1E5471CB002D899E /* PersonTests.swift */; };
@@ -30,7 +29,6 @@
 		35DE58241E546FC0002D899E /* Lynkurs-01-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lynkurs-01-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DE58271E546FC0002D899E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		35DE58341E54716A002D899E /* Lynkurs-01-Swift-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lynkurs-01-Swift-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		35DE58361E54716A002D899E /* Lynkurs_01_Swift_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lynkurs_01_Swift_Tests.swift; sourceTree = "<group>"; };
 		35DE58381E54716A002D899E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35DE583C1E5471A6002D899E /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		35DE583F1E5471CB002D899E /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 		35DE58351E54716A002D899E /* Lynkurs-01-Swift-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				35DE58361E54716A002D899E /* Lynkurs_01_Swift_Tests.swift */,
 				35DE58381E54716A002D899E /* Info.plist */,
 				35DE583F1E5471CB002D899E /* PersonTests.swift */,
 			);
@@ -194,7 +191,6 @@
 			files = (
 				35DE583E1E5471B4002D899E /* Person.swift in Sources */,
 				35DE58401E5471CB002D899E /* PersonTests.swift in Sources */,
-				35DE58371E54716A002D899E /* Lynkurs_01_Swift_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +350,7 @@
 				35DE582D1E546FC0002D899E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35DE58391E54716A002D899E /* Build configuration list for PBXNativeTarget "Lynkurs-01-Swift-Tests" */ = {
 			isa = XCConfigurationList;
@@ -362,6 +359,7 @@
 				35DE583B1E54716A002D899E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
