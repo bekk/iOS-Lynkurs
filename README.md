@@ -75,7 +75,7 @@ Dette vil bli demonstrert flere ganger underveis i kurset.
 ## Lynkurs-01-Swift
 Prosjektet er en ```Command Line Tool``` satt opp sammen med et ekstra test-Target ```OS X Unit Testing Bundle```.
 
-####Oppgaver:
+#### Oppgaver:
 Fiks koden i ```Person.swift```, slik at alle testene i ```PersonTests.swift``` fungerer.
 
 **Eksempel:**
@@ -101,7 +101,7 @@ Testen feiler fordi forventet ```age``` ikke blir returnert. Om man ser i konstr
 ## Lynkurs-02-iOS
 Lær deg basic iOS og Xcode ved å lage følgende:
 
-###Oppgaver:
+### Oppgaver:
 
 #### Oppgave 1:
 Lag det vi lagde på demoen, gjerne med litt ekstra farger og pynt.
@@ -109,7 +109,7 @@ Lag det vi lagde på demoen, gjerne med litt ekstra farger og pynt.
 #### Oppgave 2:
 Fjern knappen og få labelen til å endre tekst ved at den lytter på endringer i input-feltet.
 
-####Tips:
+#### Tips:
 Om ikke outlets eller actions fungerer, sjekk at du ikke har laget for mange knyttet til samme objekt.
 
 ## Lynkurs-03-App
@@ -120,7 +120,7 @@ Lag et nytt prosjekt i Xcode ved å trykke ```File -> New Project.. -> Single Vi
 
 Se gjerne på løsningsforslaget om du står fast.
 
-###Oppgaver:
+### Oppgaver:
 Oppgavene går ut på å opprette egne views (ViewController i Storyboard + NavnViewControllers.swift) og knytte disse sammen med hovedviewet.
 
 #### Oppgave 0: NavigationController
